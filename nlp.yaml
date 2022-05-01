@@ -8,3 +8,4 @@ dependencies:
   - matplotlib=3.0.1
   - pandas=0.23.4
   - nltk=3.3.0
+  - PyPDF2=1.27.10
