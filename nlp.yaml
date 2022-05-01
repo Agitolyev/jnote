@@ -1,0 +1,10 @@
+name: nlp
+channels:
+  - defaults
+dependencies:
+  - spacy=2.0.16
+  - numpy=1.15.4
+  - keras
+  - matplotlib=3.0.1
+  - pandas=0.23.4
+  - nltk=3.3.0
