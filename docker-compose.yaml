@@ -3,7 +3,7 @@ version: '3.3'
 services:
   jnote_amd64:
     container_name: jnote
-    image: agitolyev/jnote:${VERSION:-latest}
+    image: agitolyev/jnote:${VERSION:-abc}
     platform: linux/amd64
     build:
       context: ./
