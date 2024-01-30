@@ -1,8 +1,9 @@
-FROM jupyter/datascience-notebook:python-3.9.7
+FROM jupyter/datascience-notebook:python-3.11.6
 ENV JUPYTER_ENABLE_LAB=yes
 
-ADD nlp.yaml .
+ADD requirements.txt .
 
-RUN conda env update --file ~/nlp.yaml
+RUN pip install -r requirements.txt
+RUN python -m spacy download en
 
 CMD start-notebook.sh
