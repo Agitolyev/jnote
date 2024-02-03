@@ -75,7 +75,13 @@ To use `jnote`, follow these steps:
     cd /path/to/your/directory
     ```
 
-2. Run the Docker image:
+2. If you've added `jnote` as an alias, you can start it with:
+
+    ```bash
+    jnote
+    ```
+
+    If you haven't added `jnote` as an alias, run the Docker image:
 
     ```bash
     docker run -d --rm --name jnote -p 8888:8888 -v "$PWD":/home/jovyan/work ghcr.io/agitolyev/jnote:latest
