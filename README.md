@@ -1,5 +1,7 @@
 # jnote
 
+[![Docker](https://github.com/Agitolyev/jnote/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/Agitolyev/jnote/actions/workflows/docker-publish.yml)
+
 ## Description
 
 `jnote` is a Jupyter notebook based project initially created for personal use and now shared with the community. It comes with pre-installed libraries for various tasks including visualization, computer vision, natural language processing, and automation of day-to-day management responsibilities. Whether you're a data scientist, a manager, or someone who loves automating tasks, `jnote` could be a useful tool for you. It aims to provide a ready-to-use environment to perform daily tasks efficiently.
