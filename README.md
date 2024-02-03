@@ -54,6 +54,8 @@ The command for MacOS is the same, with the addition of `--platform linux/amd64`
     
     This will allow you to start `jnote` by simply typing `jnote` in your terminal.
 
+    **Note:** After adding the alias to your rc file, you need to relaunch your terminal for the changes to take effect.
+
     Linux
     ```bash
     alias jnote='docker run -d --rm --name jnote -p 8888:8888 -v "$PWD":/home/jovyan/work ghcr.io/agitolyev/jnote:latest'
@@ -87,6 +89,8 @@ To use `jnote`, follow these steps:
 
     Look for a line that says something like `http://127.0.0.1:8888/?token=...`. This is your access URL.
 
-4. Open your web browser and visit the access URL. You should now have access to a Jupyter notebook with your directory mounted.
+4. Open your web browser and visit the access URL. You should now have access to a Jupyter notebook with your directory mounted in `work` directory.
+
+5. Go to `work` directory to see your mounted directory.
 
 Remember, any changes you make in the Jupyter notebook will be saved to your local directory.
