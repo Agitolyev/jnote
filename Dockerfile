@@ -4,7 +4,8 @@ ENV JUPYTER_ENABLE_LAB=yes
 WORKDIR /home/jovyan
 
 ADD requirements.txt .
-ADD examples ./examples
+# TODO: add examples dir in image, but github actions have bug with copying dir
+# ADD examples ./examples
 
 RUN pip install -r requirements.txt
 RUN python -m spacy download en
