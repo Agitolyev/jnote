@@ -3,6 +3,14 @@ ENV JUPYTER_ENABLE_LAB=yes
 
 WORKDIR /home/jovyan
 
+USER root
+
+RUN apt-get update \ 
+    && apt-get install build-essential python3-dev libcairo2-dev libpango1.0-dev ffmpeg texlive texlive-latex-extra -y \
+    && apt-get clean
+
+USER jovyan
+
 ADD requirements.txt .
 # TODO: add examples dir in image, but github actions have bug with copying dir
 # ADD examples ./examples
