@@ -8,12 +8,15 @@ manim==0.18.0
 keras==3.0.4
 nltk==3.8.1
 PyPDF2==3.0.1
+tabulate==0.8.10
 
 # NLP 
 spacy==3.7.2
 
 # IMAGE PROCESSING
-opencv-python
+opencv-python==4.9.0.*
+dlib==19.24.2
 
 # MANAGING
 atlassian-python-api==3.40.1
+pdpyras==4.5.0
