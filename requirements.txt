@@ -20,3 +20,6 @@ dlib==19.24.2
 # MANAGING
 atlassian-python-api==3.40.1
 pdpyras==4.5.0
+
+# ML
+tensorflow==2.16.1
